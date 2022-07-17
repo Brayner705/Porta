@@ -280,7 +280,7 @@ span{
 	margin-top: 1em; 
 }
 /*Apartado mobile*/
-@media screen and (max-width: 1250px){
+@media screen and (max-width: 800px){
 	h1{
 		margin-bottom: 20px;
 		text-align: center;
