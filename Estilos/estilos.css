@@ -147,6 +147,7 @@ span{
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .card{
@@ -203,20 +204,21 @@ span{
 	background-color: #191c32; 
 	color: #fff;
 }
-
 .cabecera_contacto h2{
 	font-size: 3em;
 }
 
-.contenedor_contacto{
-	padding: 3em;
-	margin: 0 auto;
+.contacto{
+	display: flex;
+	justify-content: center;
 }
-
-.contenedor_contacto img{
+.contacto img{
 	width: 500px;
 	height: 450px;
-	bottom: 0;
+	border-radius: 35%;
+	margin-bottom: 30px;
+	margin-right: 30px;
+	box-shadow: 1px 3px 11px 1px #fff;
 }
 
 .form{
@@ -225,14 +227,15 @@ span{
 	width: 30vw;
 	margin-top: 2em;
 }
-
 .form input{
 	padding: 10px 20px;
 	margin-bottom: 1em;
+	margin-top: 10px;
 	background: none;
 	border: none;
 	border-bottom: 1px solid #fff;
 	color: #fff;  
+	outline: none;
 }
 
 .form textarea{
@@ -252,7 +255,6 @@ span{
 	cursor: pointer;
 	box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
 }
-
 .footer{
 	display: flex;
 	flex-direction: column;
@@ -276,4 +278,85 @@ span{
 	justify-content: space-evenly;
 	width: 300px;
 	margin-top: 1em; 
+}
+/*Apartado mobile*/
+@media screen and (max-width: 800px){
+	h1{
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	.menu a{
+		font-size: 20px;
+	}
+	.menu{
+		width: 80%;
+	}
+	.main{
+		display: flex;
+		flex-direction: column;
+	}
+	.main img{
+		height: 350px;
+		margin-top: 15px;
+	}
+	.info a{
+		position: absolute;
+		bottom: 0;
+		margin-bottom: 50px;
+		margin-left: 190px;
+	}
+	/*Sobre mi*/
+	.sobremi{
+		display: flex;
+		flex-direction: column;
+		padding: 10px;
+	}
+	.sobremi img{
+		width: 450px;
+		height: 450px;
+
+	}
+	.portafolio h2{
+		font-size: 1.5em;
+	}
+	.card{
+		width: 200px;
+		height: 250px;
+	}
+	.card_img{
+		height: 100px;
+	}
+	.card .detalles_proyectos{
+		position: relative;
+		bottom: 20px;
+		width: 70%;
+	}
+	.cabecera_contacto h2{
+		font-size: 1.5em;
+	}
+	.contacto{
+		flex-direction: column;
+		padding-left: 70px;
+	}
+	.contacto img{
+		height: 400px;
+	}
+	.form h4{
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.form{
+		display: flex;
+		flex-direction: column;
+		width: 70vw;
+		margin-top: 2em;
+	}
+	.boton_enviar{
+		padding: 20px 20px;
+
+	}
+	.footer{
+		font-size: .7em;
+		height: 100px;
+	}
 }
